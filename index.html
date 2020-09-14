@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>Meme Generator</title>
+        <h1 style="color:black;"><center>MEME GENERATOR</center></h1>
+        <link rel="stylesheet" href="meme-generator.css">
+        <style>
+        textarea
+        {
+        resize:none;  
+        width: 400px;
+        height: 50px;  
+        }
+        .button-container-div 
+        {
+        
+        position: absolute;
+        left: 900px;
+        top: 600px;
+        }
+        h1
+        {
+            font-family:Comic Sans;
+            font-size: 4em;
+        }
+        h2 
+        {
+        position: absolute;
+        left: 900px;
+        top: 150px;
+       }
+        h3 
+        {
+        position: absolute;
+        left: 900px;
+        top: 350px;
+       }
+        h4
+        {
+        position: absolute;
+        font-size: 16px;
+        left: 900px;
+         top: 550px;
+        }
+        h5
+        {
+        position: absolute;
+
+        left: 500px;
+         top: 133px;
+        }
+    </style>
+
+    </head>
+    
+    <body style="background-color:#FFCCCC;">
+       
+        <h2><textarea id="top-text"></textarea><br></br>ENTER TOP TEXT<br></br><br></br>Top Text size: <br></br><input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </h2>
+        <h3><textarea id="bottom-text"></textarea><br></br>ENTER BOTTOM TEXT<br></br><br></br>Bottom Text size: <br></br><input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">    </h3>
+        <h4><input type="file" id="image-input" accept="image/*"></h4>
+    <div class="button-container-div">
+        <button id="generate-btn">CREATE MEME</button>
+    </div>
+        <p></p>
+        
+        <h5><canvas id="meme-canvas" title="Right click -> &quot;Save image as...&quot;"></canvas></h5>
+
+        <script src="meme-generator.js"></script>
+    </body>
+</html>
